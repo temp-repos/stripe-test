@@ -1,0 +1,14 @@
+application: stripe-test
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+
+handlers:
+- url: /
+  script: stripe_test.app
+
+libraries:
+- name: ssl
+  version: latest
